@@ -54,7 +54,7 @@ $(document).ready(function() {
   // Function to fetch data from the backend
   function fetchData(criterion, value) {
     // port change
-    $.get(`http://localhost:3000/allData?${criterion}=${value}`, function(data) {
+    $.get(`https://log-ingestor-mko8.onrender.com/allData?${criterion}=${value}`, function(data) {
 
       updateResultContainer(data);
     });
