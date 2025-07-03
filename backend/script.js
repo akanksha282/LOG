@@ -58,7 +58,7 @@ $(document).ready(function() {
 
     //   updateResultContainer(data);
     // });
-    $.get(`https://log-ingestor-mko8.onrender.com/allData?${criterion}=${value}`, function(data) {
+    $.get(`/allData?${criterion}=${value}`, function(data) {
 
       updateResultContainer(data);
     });
